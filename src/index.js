@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
 //conexion a MongoDB
 mongoose
   .connect(
-    "mongodb+srv://CristopherPaiz:pruebadeapirest@pruebas.4w9gmlt.mongodb.net/?retryWrites=true&w=majority"
+    "URI_DE_MONGO"
   )
   .then(() => console.log("Conectado a la BD de Mongo Atlas"))
   .catch((err) => console.log("Hubo un error: ", err));
